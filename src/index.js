@@ -4,6 +4,8 @@ import './index.css';
 import BarfTwo from "./barf/Barf.js";
 import App from "./App.js";
 import Days from "./ex1.js";
+import { Parent, Child } from "./review.js";
+import Button from "./button.js";
 //Lets build yer first react component! Woo hoo!!!!!
 //At it's essence a react 'component' is simply a
 //function that has a render method that returns the following:
@@ -23,8 +25,11 @@ class Whatever extends React.Component {
   render(){
     return (
       <div>
+        <Button />
         <BarfTwo />
         <App />
+        <Child />
+  
       </div>
     )
   }
